@@ -1,5 +1,7 @@
 package objectoriented
 
+import java.util.Date
+
 class Person(name: String, age: Int) {
     var name: String = "Sarah"
     var age: Int = 33
@@ -11,7 +13,7 @@ class Person(name: String, age: Int) {
     }
 
     fun speak() {
-        println("Hello")
+        println("Hello today is ${Date()}")
     }
 
     fun getYearOfBirth() = 2018 - this.age
